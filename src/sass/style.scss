@@ -7,7 +7,6 @@ $highlight-color: #2eca7f;
 
 body {
     position: relative;
-    font-family: 'Roboto', Helvetica, sans-serif;
     color: #424242;
     margin: 0;
     height: 100%;
@@ -17,9 +16,11 @@ body {
 }
 
 header{
-    position: fixed;
-    width: 100%;
+    display: flex;
+    width: 1032px;
     height: 100px;
+    justify-content: space-between;
+    margin: auto;
     .site__title {
         color: #49515d;
         font-size: 20px;
@@ -32,9 +33,7 @@ header{
         }
     }
     nav {
-        float: right;
         ul {
-            list-style-type: none;
             li {
                 display: inline-block;
                 position: relative;
@@ -44,9 +43,43 @@ header{
                     display: block;
                     position: relative;
                     padding: 8px 0;
-                    margin: 0, 20px;
-                    font-weight: 400;
+                    margin: 0 20px;
                     text-align: center;
+                    color: #49515d;
+                    font-size: 15px;
+                    line-height: 1;
+                    font-weight: 400;
+                    position: relative;
+                    text-decoration: none;
+                    outline: none;
+                    opacity: 0.6;
+                    &:after{
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        border-bottom: 2px solid;
+                        content:'';
+                        width: 0;
+                        height: 2px;
+                        margin: auto;
+                        color: $highlight-color;
+                        transition: all 0.15s ease-in-out;
+                    }
+                    &:active{
+                        opacity: 1;
+                        &:after{
+                            width: 25px;
+                        }
+                    };
+
+                    &:hover{
+                        cursor: pointer;
+                        &:after {
+                            width: 25px;
+                        }
+                    }
                 }
             }
         }
