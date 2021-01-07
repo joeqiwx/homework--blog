@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe</title>
 
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
@@ -21,14 +22,53 @@
         </nav>
     </header>
     <main>
-        <section class="container" id="Home">
+        <section class="container page" id="Home">
+            <div class="page__header row" >
+                <picture class="page__photo col-sm-4 col-md-4 col-lg-4" alt="individual photo">
+                    <img src="assets/img/photo.png">
+                </picture>
+                <div class="page__title col-sm-8 col-md-8 col-lg-8">
+                    <h2>John Doe</h2>
+                    <div class="title__subtitle">Frontend-developer</div>
+                    <div class="title__socialMedia">
+                        <a><svg t="1609992871211" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="921" ><path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#FFFFFF" p-id="922"></path><path d="M695.4752 442.112c0-4.224-0.0768-8.3712-0.256-12.4928A191.104 191.104 0 0 0 742.4 380.3136a185.6 185.6 0 0 1-54.2976 14.4384 94.72 94.72 0 0 0 41.5744-52.7872 184.8064 184.8064 0 0 1-60.032 22.5024A95.1552 95.1552 0 0 0 600.6528 332.8c-52.224-0.8448-94.5408 42.0352-94.5408 95.7696 0 7.6544 0.8192 15.0528 2.4576 22.1952-78.6432-4.9152-148.3008-44.6976-194.9184-104.6784a99.5072 99.5072 0 0 0-12.8 49.152 100.352 100.352 0 0 0 42.0608 82.176 92.288 92.288 0 0 1-42.8288-12.7744v1.28c0 47.5648 32.5888 87.424 75.8528 96.7168a91.648 91.648 0 0 1-42.6752 1.408c12.032 38.9632 46.9504 67.456 88.32 68.4032A185.6768 185.6768 0 0 1 281.6 672.64 260.1472 260.1472 0 0 0 426.5472 716.8c173.8496 0.0512 268.928-147.072 268.928-274.688z" fill="#121932" opacity=".1" p-id="923"></path></svg></a>
+                        <a><svg t="1609993627141" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2739"><path d="M512 0C229.052632 0 0 229.052632 0 512s229.052632 512 512 512 512-229.052632 512-512S794.947368 0 512 0z m122.745263 512h-79.386947v269.473684h-117.921684V512H377.263158v-92.833684h60.173474v-56.643369c0-74.698105 33.684211-119.996632 127.514947-119.996631h79.386947v92.833684h-48.128c-36.109474 0-38.480842 13.608421-38.480842 36.217263v45.298526H646.736842L634.718316 512z" fill="#ffffff" p-id="2740"></path></svg></a>
+                        <a><svg t="1609993844920" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3577"><path d="M639.607467 494.318933a128 128 0 0 0-22.101334-56.234666l-0.187733-0.494934a128.9216 128.9216 0 0 0-210.670933 0l-0.256 0.580267A128.136533 128.136533 0 0 0 385.706667 486.656l-0.238934 0.546133a126.651733 126.651733 0 0 0-2.440533 24.797867 128.9728 128.9728 0 1 0 256.802133-17.169067zM512 591.377067A79.377067 79.377067 0 1 1 591.377067 512 79.377067 79.377067 0 0 1 512 591.377067z" p-id="3578" fill="#ffffff"></path><path d="M512 85.333333C276.343467 85.333333 85.333333 276.343467 85.333333 512s191.010133 426.666667 426.666667 426.666667 426.666667-191.010133 426.666667-426.666667S747.656533 85.333333 512 85.333333z m213.333333 573.3376A66.696533 66.696533 0 0 1 658.670933 725.333333H365.329067A66.56 66.56 0 0 1 298.666667 658.670933V365.329067A66.696533 66.696533 0 0 1 365.329067 298.666667h293.341866A66.696533 66.696533 0 0 1 725.333333 365.329067v121.873066z" p-id="3579" fill="#ffffff"></path><path d="M676.471467 337.5104h-30.72a10.24 10.24 0 0 0-10.24 10.24v30.72a10.24 10.24 0 0 0 10.24 10.24h30.72a10.24 10.24 0 0 0 10.24-10.24v-30.72a10.24 10.24 0 0 0-10.24-10.24z" p-id="3580" fill="#ffffff"></path></svg></a>
+                    </div>
+                </div>
 
+            </div>
+            <div class="page__content row">
+                <div class="content__aboutMe col-sm-6 col-md-6 col-lg-6" >
+                    <h3>About <span>Me</span></h3>
+                    <p>Hello! I’m John Doe. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Aenean fermentum ullamcorper sem, at placerat dolor volutpat ac. Duis nulla enim, 
+                        condimentum nec ultricies.
+                    </p>
+                </div>
+                <div class="content__info col-sm-6 col-md-6 col-lg-6">
+                    <dl>
+                        <dt>Age</dt>
+                        <dd>29</dd>
+                        <dt>Residence</dt>
+                        <dd>Austrilian</dd>
+                        <dt>Address</dt>
+                        <dd>Level 3 / 57 Coronation Drive, Brisbane</dd>
+                        <dt>e-mail</dt>
+                        <dd><a href="mailto:email@example.com">info@jiangren.com.au</a></dd>
+                        <dt>Phone</dt>
+                        <dd>+0123 123 456 789</dd>
+                    </dl>
+                </div>
+            </div>
         </section>
         <section class="container"></section>
         <section class="container"></section>
         <section class="container"></section>
         <section class="container"></section>
     </main>
-    <footer>© 2017 All rights reserved. Designed by Jiangre</footer>
+    <footer>
+		<div class="copyrights">© 2017 All rights reserved. Designed by <a href="http://jiangren.com.au">Jiangren</a></div>
+	</footer>
 </body>
 </html>
