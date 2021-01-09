@@ -1,5 +1,5 @@
 const pages = ['Home', 'Resume', 'Services', 'Blog', 'Contact'];
-function showPage(obj) {
+showPage = (obj) => {
     pages.forEach(element => {
         document.getElementById(element).classList.remove('show');
     });
