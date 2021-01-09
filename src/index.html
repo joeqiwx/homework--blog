@@ -13,16 +13,16 @@
         <div class="site__title">John <span>Doe</span></div>            
         <nav>
             <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a>Resume</a></li>
-                <li><a>Services</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
+                <li><a href="#Home" onclick="showPage(this)">Home</a></li>
+                <li><a href="#Resume " onclick="showPage(this)">Resume</a></li>
+                <li><a href="#Services" onclick="showPage(this)">Services</a></li>
+                <li><a href="#Blog" onclick="showPage(this)">Blog</a></li>
+                <li><a href="#Contact" onclick="showPage(this)">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="container page" id="Home">
+        <section class="container page show" id="Home">
             <div class="page__header row" >
                 <picture class="page__photo col-sm-4 col-md-4 col-lg-4" alt="individual photo">
                     <img src="assets/img/photo.png">
@@ -245,11 +245,157 @@
             <div class="page__header row">
                 <h2>Blog</h2>
             </div>
+            <div class="page__content">
+                <div class="row">
+                    <div class="blog col-sm-12 col-md-6 col-lg-6">
+                        <div class="blog__img">
+                            <img src="assets/img/blog_post_1.jpg">
+                            <div class="blog__date">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="blog__info">
+                            <div class="category">Travel</div>
+                            <h4>Bootstrap is most popular Framework</h4>
+                        </div>
+                    </div>
+                    <div class="blog col-sm-12 col-md-6 col-lg-6">
+                        <div class="blog__img">
+                            <img src="assets/img/blog_post_1.jpg">
+                            <div class="blog__date">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="blog__info">
+                            <div class="category">Travel</div>
+                            <h4>Bootstrap is most popular Framework</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blog col-sm-12 col-md-6 col-lg-6">
+                        <div class="blog__img">
+                            <img src="assets/img/blog_post_1.jpg">
+                            <div class="blog__date">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="blog__info">
+                            <div class="category">Travel</div>
+                            <h4>Bootstrap is most popular Framework</h4>
+                        </div>
+                    </div>
+                    <div class="blog col-sm-12 col-md-6 col-lg-6">
+                        <div class="blog__img">
+                            <img src="assets/img/blog_post_1.jpg">
+                            <div class="blog__date">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="blog__info">
+                            <div class="category">Travel</div>
+                            <h4>Bootstrap is most popular Framework</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="blog col-sm-12 col-md-6 col-lg-6">
+                        <div class="blog__img">
+                            <img src="assets/img/blog_post_1.jpg">
+                            <div class="blog__date">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="blog__info">
+                            <div class="category">Travel</div>
+                            <h4>Bootstrap is most popular Framework</h4>
+                        </div>
+                    </div>
+                    <div class="blog col-sm-12 col-md-6 col-lg-6">
+                        <div class="blog__img">
+                            <img src="assets/img/blog_post_1.jpg">
+                            <div class="blog__date">
+                                <span class="day">6</span>
+                                <span class="month">Dec</span>
+                            </div>
+                        </div>
+                        <div class="blog__info">
+                            <div class="category">Travel</div>
+                            <h4>Bootstrap is most popular Framework</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="container"></section>
+        <section class="container" id="Contact">
+            <div class="page__header row">
+                <h2>Contact</h2>
+            </div>
+            <div class="page__content">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6 contact">
+                        <h3>Get in <span>Touch</span></h2>
+                        <div id="map"></div>
+                        <div id="googleMap" style="width:451px;height:180px;"></div>
+                        <script>
+                        function myMap() {
+                        var mapProp= {
+                        center:new google.maps.LatLng(51.508742,-0.120850),
+                        zoom:5,
+                        };
+                        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                        }
+                        </script>
+                        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+                        <div class="contact__info">
+                            <div class="contact__icon">
+                                <svg t="1610172380648" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2527" width="200" height="200"><path d="M511.932268 0c-213.943865 0-387.880498 170.933833-387.880499 381.06211 0 164.815346 238.869364 485.098975 341.66447 620.247558a58.249807 58.249807 0 0 0 46.216029 22.690332c18.129688 0 35.491743-8.443964 46.328916-22.690332 102.704796-135.126006 341.709624-455.432213 341.709624-620.247558C899.970808 170.933833 725.89871 0 511.932268 0z m0 519.574733c-91.393496 0-165.786176-72.902569-165.786176-162.670489 0-89.722765 74.39268-162.738221 165.786176-162.73822 91.438651 0 165.718443 73.015456 165.718443 162.73822 0 89.76792-74.279793 162.670488-165.718443 162.670489z" fill="#2eca7f" p-id="2528"></path></svg>
+                            </div>
+                            <h5>Brisbane,Australia</h5>
+                        </div>
+                          <div class="contact__info">
+                            <div class="contact__icon">
+                                <svg t="1610172380648" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2527" width="200" height="200"><path d="M511.932268 0c-213.943865 0-387.880498 170.933833-387.880499 381.06211 0 164.815346 238.869364 485.098975 341.66447 620.247558a58.249807 58.249807 0 0 0 46.216029 22.690332c18.129688 0 35.491743-8.443964 46.328916-22.690332 102.704796-135.126006 341.709624-455.432213 341.709624-620.247558C899.970808 170.933833 725.89871 0 511.932268 0z m0 519.574733c-91.393496 0-165.786176-72.902569-165.786176-162.670489 0-89.722765 74.39268-162.738221 165.786176-162.73822 91.438651 0 165.718443 73.015456 165.718443 162.73822 0 89.76792-74.279793 162.670488-165.718443 162.670489z" fill="#2eca7f" p-id="2528"></path></svg>
+                            </div>
+                            <h5>Brisbane,Australia</h5>
+                        </div>                       <div class="contact__info">
+                            <div class="contact__icon">
+                                <svg t="1610172380648" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2527" width="200" height="200"><path d="M511.932268 0c-213.943865 0-387.880498 170.933833-387.880499 381.06211 0 164.815346 238.869364 485.098975 341.66447 620.247558a58.249807 58.249807 0 0 0 46.216029 22.690332c18.129688 0 35.491743-8.443964 46.328916-22.690332 102.704796-135.126006 341.709624-455.432213 341.709624-620.247558C899.970808 170.933833 725.89871 0 511.932268 0z m0 519.574733c-91.393496 0-165.786176-72.902569-165.786176-162.670489 0-89.722765 74.39268-162.738221 165.786176-162.73822 91.438651 0 165.718443 73.015456 165.718443 162.73822 0 89.76792-74.279793 162.670488-165.718443 162.670489z" fill="#2eca7f" p-id="2528"></path></svg>
+                            </div>
+                            <h5>Brisbane,Australia</h5>
+                        </div>                       <div class="contact__info">
+                            <div class="contact__icon">
+                                <svg t="1610172380648" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2527" width="200" height="200"><path d="M511.932268 0c-213.943865 0-387.880498 170.933833-387.880499 381.06211 0 164.815346 238.869364 485.098975 341.66447 620.247558a58.249807 58.249807 0 0 0 46.216029 22.690332c18.129688 0 35.491743-8.443964 46.328916-22.690332 102.704796-135.126006 341.709624-455.432213 341.709624-620.247558C899.970808 170.933833 725.89871 0 511.932268 0z m0 519.574733c-91.393496 0-165.786176-72.902569-165.786176-162.670489 0-89.722765 74.39268-162.738221 165.786176-162.73822 91.438651 0 165.718443 73.015456 165.718443 162.73822 0 89.76792-74.279793 162.670488-165.718443 162.670489z" fill="#2eca7f" p-id="2528"></path></svg>
+                            </div>
+                            <h5>Brisbane,Australia</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 contact">
+                        <h3>Contact <span>Form</span></h3>
+                        <form id="contact__form">
+                            <div class="form__group">
+                                <div class="form__icon">
+
+                                </div>
+                                <input id="form__name" placeholder="Fullname">
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                                <input type="submit" class="form__btn" value="Send message">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 		<div class="copyrights">© 2017 All rights reserved. Designed by <a href="http://jiangren.com.au">Jiangren</a></div>
-	</footer>
+    </footer>
+    <script type="text/javascript" src="../src/js/main.js"></script>
 </body>
 </html>

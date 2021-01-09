@@ -418,4 +418,136 @@ footer .copyrights a {
   border: 0;
 }
 
+#Blog {
+  display: none;
+}
+#Blog .page__header {
+  padding: 30px 50px;
+  margin-bottom: 0;
+}
+#Blog .page__header h2 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+#Blog .page__content {
+  padding: 30px 50px 50px;
+}
+#Blog .page__content .blog {
+  padding: 0;
+  max-width: 45%;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+#Blog .page__content .blog__img img {
+  max-width: 100%;
+  margin: 0;
+}
+#Blog .page__content .blog__img .blog__date {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 0.3em;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  right: 2em;
+  min-width: 44px;
+}
+#Blog .page__content .blog__img .blog__date .day {
+  font-size: 21px;
+  margin: 3px 0;
+  color: #2eca7f;
+  line-height: 1;
+}
+#Blog .page__content .blog__img .blog__date .month {
+  display: block;
+  font-weight: 400;
+  margin-bottom: 3px;
+  color: #2eca7f;
+  line-height: 1;
+  margin: 0;
+}
+#Blog .page__content .blog__info {
+  padding: 0.8em 1.2em 1.4em;
+}
+#Blog .page__content .blog__info .category {
+  color: #9e9e9e;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+#Blog .page__content .blog__info h4 {
+  font-weight: 600;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+#Contact {
+  display: none;
+}
+#Contact .page__header {
+  padding: 30px 50px;
+  margin-bottom: 0;
+}
+#Contact .page__header h2 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+#Contact .page__content {
+  padding: 30px 50px 50px;
+}
+#Contact .page__content h3 {
+  font-size: 21px;
+  margin: 5px 0 25px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#Contact .page__content h3 span {
+  color: #2eca7f;
+}
+#Contact .page__content .contact__info {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+#Contact .page__content .contact__info h5 {
+  position: relative;
+  padding-left: 50px;
+  margin: 5px 0;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#Contact .page__content .contact__icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  width: 36px;
+  height: 36px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  text-align: center;
+}
+#Contact .page__content .contact__icon svg {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 36px;
+}
+
+.show {
+  display: block;
+}
+
 /*# sourceMappingURL=style.css.map */
