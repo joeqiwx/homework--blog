@@ -82,6 +82,7 @@ header{
 
                     &:hover{
                         cursor: pointer;
+                        text-decoration: none;
                         &:after {
                             width: 25px;
                         }
@@ -232,6 +233,219 @@ footer{
             text-decoration: none;
             outline: none;
             transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+
+#Home {
+    display: none;
+}
+
+
+#Resume {
+    display: none;
+
+    .page__header {
+        padding:30px 50px;
+        margin-bottom: 0;
+        h2 {
+            color:#fff;
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .page__content {
+        padding: 30px 50px 50px;
+        h3 {
+            font-size: 21px;
+            margin:5px 0 25px;
+            font-weight: 600;
+            line-height: 1.5em; 
+        }
+        .timeline {
+            border-left: 2px solid #e0e0e0;
+            padding: 15px 0;
+            &__card {
+                position: relative;
+                padding: 15px 20px 10px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                background-color: #fff;
+                border-left: 2px solid #2eca7f;
+                box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    width: 12px;
+                    height: 12px;
+                    top: 20px;
+                    left: -29px;
+                    border: 2px solid #2eca7f;
+                    z-index: 2;
+                }
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    position: absolute;
+                    background-color: #2eca7f;
+                    border-radius: 10px;
+                    width: 29px;
+                    height: 2px;
+                    top: 25px;
+                    left: -29px;
+                    z-index: 1;
+                }
+                h4 {
+                    font-size: 16px;
+                    line-height: 1.2em;
+                    font-weight: 600;
+                    margin: 0;
+                }
+                .card__time {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 1.2em;
+                    color: $highlight-color;
+                    margin-bottom: 8px;
+                }
+                .card__company {
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 1.2em;
+                    color: #9e9e9e;
+                    margin-left: 5px;
+                    margin-bottom: 8px;
+                    padding-left: 8px;
+                    border-left: 1px solid #e0e0e0;
+                }
+
+                p {
+                    font-size: 15px;
+                    margin: 0 0 10px;
+                    font-weight: 400;
+                }
+
+            }
+        }
+        .skill {
+            h3 {
+                font-size: 21px;
+                margin: 5px 0 25px;
+                font-weight: 600;
+                line-height: 1.5em;
+                span {
+                    color: $highlight-color;
+                }
+            }
+            &__info {
+                margin-bottom: 30px;
+                h4 {
+                    font-size: 0.8em;
+                    line-height: 1.1em;
+                    position: relative;
+                    margin: 0 0 5px;
+                    font-weight: 600;
+                }
+            }
+            &__container{
+                background-color: #f5f5f5;
+                border: 1px solid #e0e0e0;
+                box-sizing: border-box;
+                height: 12px;
+                margin-bottom: 12px;
+                width: 100%;
+            }
+            &__percentage {
+            background-color: $highlight-color;
+            height: 10px;
+            padding: 0;
+            }    
+        }
+    }              
+}
+
+#Services {
+    display: none;
+    .page__header {
+        padding:30px 50px;
+        margin-bottom: 0;
+        h2 {
+            color:#fff;
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 1.5em;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    .page__content {
+        padding: 30px 50px 50px;
+        h3 {
+            font-size: 21px;
+            margin:5px 0 25px;
+            font-weight: 600;
+            line-height: 1.5em; 
+            span {
+                color: $highlight-color;
+            }
+        }
+
+        .service {
+            text-align: center;
+            padding: 0;
+            margin-bottom: 30px;
+            &__img {
+                width: 120px;
+                height: 120px;
+                background-color: #fafafa;
+                border-radius: 100px;
+                margin: 0 auto;
+                text-align: center;
+                transition: all 0.3s ease-in-out;
+                img {
+                    max-width: 100px;
+                    height:64px;
+                    margin:28px 0;
+                }
+            }
+            h4 {
+                font-size: 17px;
+                padding:20px 0 0;
+                font-weight:600;
+                line-height: 1.5em;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 15px;
+                margin: 0 0 10px;
+                font-weight: 400;
+            }
+        }
+
+        .client {
+            margin-bottom: 30px;
+            &__logo {
+                text-align: center;
+                padding: 5px 0;
+                opacity: 0.4;
+                transition: all 0.25 ease-in-out;
+                img {
+                    max-width: 80px;
+                    height: auto;
+                    border: 0;
+                }
+            }
         }
     }
 }
