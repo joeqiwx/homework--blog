@@ -26,6 +26,7 @@ header {
   height: 100px;
   justify-content: space-between;
   margin: auto;
+  z-index: 10;
 }
 header .site__title {
   color: #49515d;
@@ -202,6 +203,7 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: -1;
 }
 footer .copyrights {
   display: block;

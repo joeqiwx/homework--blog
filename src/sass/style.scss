@@ -27,6 +27,7 @@ header{
     height: 100px;
     justify-content: space-between;
     margin: auto;
+    z-index: 10;
     .site__title {
         color: #49515d;
         font-size: 20px;
@@ -222,6 +223,7 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: -1;
     .copyrights {
         display: block;
         margin-bottom: 12px;
