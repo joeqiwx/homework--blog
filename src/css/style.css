@@ -144,7 +144,7 @@ header nav ul li a:hover:after {
   margin: 0 auto;
   margin-top: 20px;
 }
-.page__title .title__socialMedia a svg {
+.page__title .title__socialMedia a img {
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -540,12 +540,53 @@ footer .copyrights a {
   border-radius: 20px;
   text-align: center;
 }
-#Contact .page__content .contact__icon svg {
+#Contact .page__content .contact__icon img {
   position: relative;
   width: 18px;
   height: 18px;
   text-align: center;
   line-height: 36px;
+}
+#Contact .page__content .contact__form .form__group .form__item {
+  padding-left: 40px;
+  position: relative;
+  margin: 0 0 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#Contact .page__content .contact__form .form__group .form__item input {
+  padding: 10px 0 0 10px;
+  margin-bottom: 12px;
+  border: none;
+}
+#Contact .page__content .contact__form .form__group .form__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  color: #bdbdbd;
+  background-color: #fafafa;
+}
+#Contact .page__content .contact__form .form__group .form__item textarea {
+  padding: 10px 0 0 10px;
+  margin-bottom: 12px;
+  border: none;
+}
+#Contact .page__content .contact__form .form__group .form__btn {
+  background-color: #2eca7f;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.8;
+  padding: 0 1.5em;
+  outline: none;
+  border-radius: 3px;
+  margin-top: 20px;
 }
 
 .show {
