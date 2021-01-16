@@ -21,13 +21,30 @@ body {
     background-repeat: no-repeat;
 }
 
+.sticker {
+    position: fixed;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+    .site__title{
+    margin-top: 18px;
+    }
+    li {
+        margin-top: 13px;
+    }
+
+}
+
 header{
-    display: flex;
-    width: 1032px;
-    height: 100px;
-    justify-content: space-between;
-    margin: auto;
+    width: 100%;
     z-index: 10;
+    .header__content{
+        display: flex;
+        width: 1032px;
+        height: 100px;
+        justify-content: space-between;
+        margin: auto;
+    }
     .site__title {
         color: #49515d;
         font-size: 20px;
@@ -39,6 +56,7 @@ header{
             color: $highlight-color;
         }
     }
+    
     nav {
         ul {
             li {
@@ -100,8 +118,13 @@ header{
     border-radius: 15px;
     background-color: #fff;
     margin: 0 auto;
+    z-index: 5;
     box-shadow: 0px 15px 25px 0px rgba(0,0,0,0.1);
 }
+main {
+    padding-bottom: 50px;
+}
+
 
 .page {
     &__header{
@@ -223,7 +246,6 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: -1;
     .copyrights {
         display: block;
         margin-bottom: 12px;
@@ -631,4 +653,10 @@ footer{
 
 .show {
     display:block;
+}
+.active{
+    opacity: 1;
+    &:after{
+        width: 25px;
+    }
 }

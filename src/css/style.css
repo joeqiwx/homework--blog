@@ -20,13 +20,29 @@ body {
   background-repeat: no-repeat;
 }
 
+.sticker {
+  position: fixed;
+  background-color: #fff;
+  height: 60px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.1);
+}
+.sticker .site__title {
+  margin-top: 18px;
+}
+.sticker li {
+  margin-top: 13px;
+}
+
 header {
+  width: 100%;
+  z-index: 10;
+}
+header .header__content {
   display: flex;
   width: 1032px;
   height: 100px;
   justify-content: space-between;
   margin: auto;
-  z-index: 10;
 }
 header .site__title {
   color: #49515d;
@@ -94,7 +110,12 @@ header nav ul li a:hover:after {
   border-radius: 15px;
   background-color: #fff;
   margin: 0 auto;
+  z-index: 5;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding-bottom: 50px;
 }
 
 .page__header {
@@ -203,7 +224,6 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
 }
 footer .copyrights {
   display: block;
@@ -591,6 +611,13 @@ footer .copyrights a {
 
 .show {
   display: block;
+}
+
+.active {
+  opacity: 1;
+}
+.active:after {
+  width: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
